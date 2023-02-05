@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy!</title>
+
+    <link rel="stylesheet" href="main.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="//unpkg.com/string-similarity/umd/string-similarity.min.js"></script>
+</head>
+<body>
+    <script src="game.js"></script>
+    <header>Japoerdy!</header>
+    <p id="money">0</p>
+    <p id="val">200</p>
+    <p id="cat">Question 10/20 - Category: the red little blues</p>
+    <h1 id="q"></h1>
+    <h3>Corrrect!</h3>
+    <form>
+        <input type="text" required>
+        <span>
+            <button id="submit">Guess</button>
+            <button id="skip">Skip</button>
+        </span>
+    </form>
+    <progress value="20" max='100'>20</progressm>
+</body>
+</html>
