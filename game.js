@@ -167,7 +167,7 @@ let questions = [];
 
 
 const getCategories = () => {
-    $.get("http://jservice.io/api/random", {"count":10}, data => {
+    $.get("https://jservice.io/api/random", {"count":10}, data => {
         console.log(data);
         for(q of data){
             console.log(q);
@@ -179,30 +179,3 @@ const getCategories = () => {
 };
 
 getCategories();
-
-/*testing
-$(document).ready(function(){
-    questions.push(
-        new Question({
-            "id": 79082,
-            "answer": "water moccasin",
-            "question": "The cottonmouth snake is also known by this name that sounds like Native American footwear",
-            "value": 1000,
-            "airdate": "2002-05-28T19:00:00.000Z",
-            "created_at": "2022-12-30T19:12:47.928Z",
-            "updated_at": "2022-12-30T19:12:47.928Z",
-            "category_id": 4271,
-            "game_id": 1160,
-            "invalid_count": null,
-            "category": {
-                "id": 4271,
-                "title": "creepers & crawlers",
-                "created_at": "2022-12-30T19:00:14.189Z",
-                "updated_at": "2022-12-30T19:00:14.189Z",
-                "clues_count": 10
-            }
-        }, 0)
-    );
-    questions[0].load();
-})
-*/
