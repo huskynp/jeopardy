@@ -21,7 +21,7 @@ class Question{
 
         this.money = d.value;
         if(d.value === null){
-            this.money == 400;
+            this.money = 400;
         }
         this.answer = d.answer;
         this.question = d.question;
