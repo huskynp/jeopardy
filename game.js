@@ -23,8 +23,8 @@ class Question{
         if(d.value === null){
             this.money = 400;
         }
-        this.answer = d.answer;
-        this.question = d.question;
+        this.answer = d.answer.replace(/<\/?[^>]+(>|$)/g, "");
+        this.question = d.question.replace(/<\/?[^>]+(>|$)/g, "");
         this.date = d.airdate;
         this.airyear = parseInt(d.airdate.slice(0,4));
         let category = d.category;
