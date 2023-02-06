@@ -39,7 +39,7 @@ class Question{
     }
 
     checkAnswer(answer){
-        let similarity = stringSimilarity.compareTwoStrings(this.answer, answer);
+        let similarity = stringSimilarity.compareTwoStrings(this.answer.toLowerCase(), answer.toLowerCase());
         console.log(similarity);
         // is correct?
         if(similarity >= this.SIMILAR_THRESHOLD){
