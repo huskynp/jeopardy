@@ -24,7 +24,7 @@ class Question{
             this.money = 400;
         }
         this.answer = d.answer.replace(/<\/?[^>]+(>|$)/g, "");
-        this.question = d.question.replace(/<\/?[^>]+(>|$)/g, "");
+        this.question = d.question.replace(/<\/?[^>]+(>|$)/g, "").replace("/'", "").replace('/"', "");
         this.date = d.airdate;
         this.airyear = parseInt(d.airdate.slice(0,4));
         let category = d.category;
